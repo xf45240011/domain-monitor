@@ -1,0 +1,14 @@
+name = "domain-monitor"
+main = "src/worker.js"
+compatibility_date = "2023-10-02"
+
+# --- 新增：每天早上8点自动检查 ---
+[triggers]
+crons = ["0 0 * * *"] 
+# -----------------------------
+
+[[d1_databases]]
+binding = "DB"
+database_name = "domain-db"
+database_id = "370db876-1d6d-4cbe-a1d5-f6fbe96bb1ca" # 别人部署时需要改这里
+

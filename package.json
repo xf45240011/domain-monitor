@@ -1,0 +1,13 @@
+{
+  "name": "domain-monitor",
+  "version": "1.0.0",
+  "description": "Domain Monitor on Cloudflare Workers with D1",
+  "main": "src/worker.js",
+  "scripts": {
+    "deploy": "wrangler deploy"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  }
+}
